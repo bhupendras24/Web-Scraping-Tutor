@@ -1,0 +1,27 @@
+jira:
+  base_url: "https://issues.apache.org/jira"  # Changed from old URL
+  projects:
+    - "KAFKA"
+    - "SPARK"
+    - "HADOOP"
+
+scraper:
+  batch_size: 50
+  max_workers: 5
+  timeout: 30
+  max_retries: 3
+  backoff_factor: 2.0
+  rate_limit_delay: 1.0
+
+transformer:
+  min_quality_score: 0.3
+  max_text_length: 2000
+
+output:
+  format: "jsonl"
+  directory: "./output"
+  checkpoint_dir: "./checkpoints"
+
+advanced:
+  enable_code_extraction: true
+  deduplicate: true
