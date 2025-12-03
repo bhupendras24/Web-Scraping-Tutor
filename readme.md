@@ -1,4 +1,4 @@
-# Apache Jira → LLM Training Data Pipeline
+# Web Scraping Tutor
 
 A scalable, fault-tolerant system for scraping and transforming Apache Jira issues into high-quality JSONL datasets for Large Language Model (LLM) training.
 
